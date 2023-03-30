@@ -1,0 +1,239 @@
+:root {
+    --btn-bg-color :rgba(0, 0, 0, 0.962);
+    --font-color: black;
+    --btn-color: white;
+    --font-size-base: clamp(18px, .23vw + 17.09px, 20px); 
+    --theme-on-bg: #000;
+    --font-size: clamp(43.95px, 2.18vw + 35.22px, 63.15px);
+    --theme-font-family-serif: "Roboto Serif", Georgia, Cambria, "Times New Roman", Times, serif;
+    --font-family: 'Azeret Mono', monospace;
+}
+* {
+    color: var(--font-color);
+    
+}
+h1, h2, h3, h4, h5 {
+    font-family: var(--font-family);
+}
+html, body {
+    line-height: 1.5;
+    
+    font-size: var(--font-size-base);
+    color: var(--theme-on-bg);
+    
+}
+.all {
+    width: 89%;
+    margin: 0 auto;
+}
+.main-container {
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 0 0 15px 5px rgba(153, 176, 204, 0.8);
+}
+li {
+    list-style: none;
+}
+li a, p a, h3 a {
+    text-decoration: none;
+}
+.read a {
+    color:var(--btn-color);
+}
+.read {
+   background-color: var(--btn-bg-color);
+   height: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: -8px -8px auto -8px;
+   
+}
+.nav {
+    display: flex;
+    align-items: center;
+}
+.nav .nav-bars {
+    visibility: hidden;
+}
+.nav ul {
+    display: flex;
+}
+.nav ul li {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+.nav h3 {
+    flex-grow: 1;
+}
+.picture img, .picture-2 img {
+    width: 280px;
+    height: 300px;
+    border-radius: 20px;
+}
+.picture img {
+    top:0;
+    position: sticky;
+}
+.picture {
+    display: flex;
+    margin-top: 40px;
+    position: relative;
+}
+.picture .text {
+    margin-left: 48px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    font-size: var(--font-size);
+}
+.text h1, p, p a {
+    line-height: 1.1;
+    font-weight: 700;
+    
+}
+
+.btn.dark a {
+    color: var(--btn-color);
+
+}
+.btn.dark {
+    background: var(--btn-bg-color);
+}
+.btn.light {
+    border: 1px solid var(--font-color);
+}
+.btn {
+    width: 150px;
+    height:30px;
+    text-align:center;
+    padding-top: 10px;
+    bottom:0;
+    border-radius: 15px;
+
+}
+.btn.dark:hover {
+    background: grey;
+    
+}
+.btn.light:hover {
+    background: var(--btn-bg-color);
+}
+.btn.light:hover a {
+    color:var(--btn-color);
+
+}
+.third-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.third-part  {
+    align-items: center;
+
+}
+.third-part h2, .third-part p {
+    text-align: center;
+    padding:10px;
+}
+.third-part .btn {
+    text-align: center;
+}
+.second-part {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    width: 85%;
+
+    margin:25px auto;
+    text-align: center;
+    background: rgb(201, 226, 234);
+    border-radius: 40px;
+}
+.sixth-part {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    background: rgb(187 235 215 / 85%);
+    border-radius: 50px;
+}
+.sixth-part p {
+    
+    text-align: center;
+}
+.seventh-part .end{
+    display: flex;
+    justify-content: space-around;
+
+}
+.fifth-part {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 10px;
+    position: relative;
+}
+.fifth-part .picture-2 img {
+    top:0;
+    margin-top: 75px;
+    position: sticky;
+}
+.seventh-part {
+    background: rgba(97, 93, 93, 0.316);
+    border-radius: 25px;
+    margin-top: 20px;
+}
+.seventh-part .bg-grey {
+    padding: 10px;
+}
+.finish .btn {
+    width: 300px;
+}
+.bottom-icon {
+    color: white;
+}
+
+
+@media screen and (max-width: 770px) {
+    .picture {
+        display: flex;
+        flex-flow: column nowrap;
+
+    }
+    
+    
+}
+@media  screen  and (max-width: 720px) {
+    .nav ul li {
+        padding: 5px;
+    }
+    .picture img {
+         position: relative;
+    }
+    
+}
+@media screen and (max-width: 672px) {
+    .fifth-part {
+        display: block;
+    }
+    .nav .btn, .third-part .btn {
+        width: 100px;
+    }
+    
+}
+@media screen and (max-width: 570px) {
+    .nav ul {
+         visibility: hidden;
+    }
+    .nav .nav-bars {
+        visibility: visible;
+        right: 0;
+        position: relative;
+    }
+   
+}
